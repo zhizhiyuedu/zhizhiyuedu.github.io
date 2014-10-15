@@ -37,32 +37,11 @@
 
   <body>
 
-    <div class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="./index.html">知之阅读</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li  class="active"><a href="./index.html">主页</a></li>
-            <li><a href="./download.html">免费下载</a></li>
-            <li ><a href="./blog/index.html">博客</a></li>
-            <li><a href="./about.html">关于</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-
     <div class="container">
     <div class="starter-template">
+        <div class="row">
         <h1>笔记功能超强的  Pdf阅读器 <br><small>帮你轻松快速记读书笔记！</small></h1>
-        
+        </div>
         <hr>     
       <div class="row">
       
@@ -111,15 +90,50 @@
         </div>
       </div>
        <hr>   
-       <div class="row">
-       <div class="col-md-2 col-md-offset-8">
-       <a href="./download.html" class="btn btn-primary btn-lg active" role="button">免费下载</a>
-       </div>
-       </div>
-       <p class="lead"><br><br></p>
+       <div class="row" id="download">
+        
+        <div class="col-sm-4 col-md-offset-2">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h3>免费账户</h3>
+            </div>
+            <div class="panel-body">
+              <h3 class="panel-title price">0 <span class="price-month">元/月</span> </h3>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">最多支持 20 本书</li>
+              <li class="list-group-item">最多支持 1000 条笔记</li>
+              <li class="list-group-item">简单的搜索 </li>
+              <li class="list-group-item">基础功能</li>
+              <li class="list-group-item"><a href="./download.html" class="btn btn-primary btn-lg">马上下载</a></li>
+            </ul>
+          </div>          
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-danger text-center">
+            <div class="panel-heading">
+              <h3>高级账户</h3>
+            </div>
+            <div class="panel-body">
+              <h3 class="panel-title price">9<span class="price-month">元/月</span></h3>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">支持 无限 本书</li>
+              <li class="list-group-item">支持 无限 条笔记</li>
+              <li class="list-group-item">强大的搜索</li>              
+              <li class="list-group-item">未来更多高级功能</li>
+              <li class="list-group-item"><a href="./vip_download.html" class="btn btn-primary btn-lg">马上下载</a></li>
+            </ul>
+          </div>          
+        </div>
       </div>
-     
+    </div> 
 <hr>
+<ul class="nav navbar-nav">
+            <li  class="active"><a href="./index.html">主页</a></li>
+            <li ><a href="./blog/index.html">博客</a></li>
+            <li><a href="./about.html">关于</a></li>
+          </ul>
 <script type="text/javascript">
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
 document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fbff6f9682e2bca70fa7ecac6cb2c255d' type='text/javascript'%3E%3C/script%3E"));
