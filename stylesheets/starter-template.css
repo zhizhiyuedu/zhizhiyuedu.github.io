@@ -1,14 +1,13 @@
-
+section{
+font-size: 18px;
+}
 .starter-template {
 font-size: 18px;
   text-align: center;
   
 }
 
-.row {
-padding:50px;
 
-}
 #Survey_form{
 text-align: left;
 }
@@ -40,4 +39,37 @@ box-shadow: 0 0 10px rgba(0,0,0,.5);
 -webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
 -webkit-transform: scale(1.05);
 -moz-transform: scale(1.05);
+}
+
+#splash{
+color:white;
+ padding: 40px 0 100px 0;
+}
+
+#jiemian{
+background: #3399CC; /* #F6A74E;*/
+color:white;
+ padding: 40px 0 0 0;
+}
+#tedian{
+background: white; /* #F6A74E;*/
+color:black;
+ padding: 40px 0;
+}
+
+#jiemian div.container{
+width:100%;
+padding:0px;
+}
+
+#huigu{
+background: #3399CC; /* #F6A74E;*/
+color:white;
+ padding: 40px 0 ;
+}
+
+#xiazai{
+background: white; /* #F6A74E;*/
+color:black;
+ padding: 40px 0;
 }
