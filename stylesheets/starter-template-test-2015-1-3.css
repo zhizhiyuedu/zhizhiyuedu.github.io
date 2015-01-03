@@ -1,0 +1,70 @@
+body{
+font-family:"Lucida Grande", "Microsoft YaHei", "STHeiti", "SimSun","Arial","Verdana","sans-serif";
+}
+section{
+font-size: 18px;
+}
+.starter-template {
+font-size: 18px;
+  text-align: center;
+  
+}
+
+#splash{
+background: #3592dd;
+color:white;
+ padding: 100px 0 0 0;
+}
+#splash a.btn{
+margin-bottom: 100px;
+}
+
+#zhujiemian{
+background: rgb(44, 62, 80); /*#1d1d1d;  #F6A74E;*/
+color:white;
+ padding: 40px 0 0 0;
+}
+
+#zhailu{
+background: rgb(58, 83, 107); /*#282828;*/
+color:white;
+ padding: 80px 0 0 0;
+}
+#zhailu div.container{
+width:100%;
+padding:0px;
+}
+#pizhu{
+background: #35535b;/*#3592dd; /* #F6A74E;*/
+color:white;
+ padding: 80px 0 0 0;
+}
+#pizhu div.container{
+width:100%;
+padding:0px;
+}
+
+#huizong{
+background:  rgb(44, 62, 80);/*#3592dd;/*#1d1d1d;  #F6A74E;*/
+color:white;
+ padding: 80px 0 0 0;
+}
+
+
+
+
+
+
+#xiazai{
+background: #3592dd; /* #F6A74E;*/
+color:white;
+ padding: 60px 0;
+}
+
+.my-padding-left{
+padding-left:30px;
+}
+.my-padding-right{
+padding-right:30px;
+}
+
