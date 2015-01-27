@@ -50,9 +50,14 @@ width:100%;
 padding:0px;
 }
 
-#xiazai{
-background: #3592dd; /* #F6A74E;*/
+#yuntongbu{
+background: #3592dd;
 color:white;
+ padding: 80px 0;
+}
+#xiazai{
+background: #1d1d1d; /* #F6A74E;*/
+color:black;
  padding: 60px 0;
 }
 
@@ -63,3 +68,50 @@ padding-left:30px;
 padding-right:30px;
 }
 
+.price {
+  font-size: 40px;
+}
+
+.price-cents {
+  vertical-align: super;
+  font-size: 50%;
+}
+
+.price-month {
+  font-size: 35%;
+  font-style: italic;
+}
+.panel {
+-webkit-transition-property : scale; 
+-webkit-transition-duration : 0.2s; 
+-webkit-transition-timing-function : ease-in-out; 
+-moz-transition : all 0.2s ease-in-out;  
+}
+
+.panel:hover {
+box-shadow: 0 0 10px rgba(0,0,0,.5);
+-moz-box-shadow: 0 0 10px rgba(0,0,0,.5);
+-webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+}
+
+.biaozhu-yellow{
+background:#D6B106;
+}
+
+.biaozhu-green{
+background:#04F200;
+}
+.biaozhu-red{
+background:#E7442F;/*EC0E06;*/
+}
+.biaozhu-blue{
+background:#1995D9;
+}
+.biaozhu-purple{
+background:#D6069D;
+}
+.biaozhu-orange{
+background:#E34506;
+}
