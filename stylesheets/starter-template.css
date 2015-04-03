@@ -17,6 +17,13 @@ background: #3592dd;
 color:white;
  padding: 100px 0 0 0;
 }
+
+#splash-2{
+background: #3592dd;
+color:white;
+ padding: 100px 0 200px 0;
+}
+
 #splash img{
 margin-top: 100px;
 }
@@ -37,6 +44,12 @@ color:white;
 #pizhu div.container{
 width:100%;
 padding:0px;
+}
+
+#siweidaotu{
+background: #3592dd; /* #F6A74E;*/
+color:white;
+ padding: 80px 0 ;
 }
 
 #huizong{
