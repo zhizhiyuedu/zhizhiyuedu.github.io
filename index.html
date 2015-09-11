@@ -35,13 +35,20 @@
 </script>
 
 <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?bff6f9682e2bca70fa7ecac6cb2c255d";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+var downloadLink1 = document.getElementById('download_free');
+addListener(downloadLink1, 'click', function() {
+  ga('send', 'event', 'download', 'free', '0');
+});
+
+var downloadLink2 = document.getElementById('download_vip_10');
+addListener(downloadLink2, 'click', function() {
+  ga('send', 'event', 'download', 'vip', '10');
+});
+
+function addListener(element, type, callback) {
+ if (element.addEventListener) element.addEventListener(type, callback);
+ else if (element.attachEvent) element.attachEvent('on' + type, callback);
+}
 </script>
 
   </head>
@@ -56,7 +63,7 @@ var _hmt = _hmt || [];
         <h1>积累、整理、使用知识</h1>
         <p>基于读书笔记的知识管理软件</p>
         
-        <img src="images/reading.jpg" class="img-responsive">    
+        <img src="images/reading.png" class="img-responsive">    
 
         </div>
   
@@ -73,13 +80,11 @@ var _hmt = _hmt || [];
         
         <p>用鼠标一点一划，即可标注打动你的字句</p>
         <p>你标注的内容自动汇总到笔记里，不再散落天涯</p>
-        <p>支持<mark>高亮</mark>，<u>下划线</u>，<mark>区域高亮</mark>等标注工具<small>，以后增加更多...</small></p>
-        <p class="small">说明：目前仅支持区域高亮</p>
-        
+        <p>支持<mark>高亮</mark>，<u>下划线</u>，<mark>区域高亮</mark>等标注工具<small>，以后增加更多...</small></p>       
         
       </div>
       <div class="col-md-7">
-      <img src="images/reading-left.jpg" class="img-responsive">
+      <img src="images/left.png" class="img-responsive">
       </div>
       </div>
       </div>
@@ -89,7 +94,7 @@ var _hmt = _hmt || [];
       <div class="container">   
       <div class="row">
       <div class="col-md-7">
-        <img src="images/reading-right_meitu_1.jpg" class="img-responsive">
+        <img src="images/right.png" class="img-responsive">
         </div>
         <div class="col-md-5 my-padding-right">
         <h2 class="text-left">右边顺手写批注</h2>
@@ -108,15 +113,15 @@ var _hmt = _hmt || [];
        <div class="container">   
             <div class="row">
       
-        <div class="col-md-5 my-padding-left">
+        <div class="col-md-4 my-padding-left">
         <h2 class="text-left">自动汇总成笔记</h2>
         <p>你标注的重点，你批注的心得，知之阅读按书名自动汇总成笔记，存放在独立的笔记本文件里</p>
         <p>点击标注，就可以打开标注所在的书本，自动跳到标注所在的页面</p>
         
         </div>
         
-        <div class="col-md-7">
-        <img src="images/notes.jpg" class="img-responsive my-padding-right">
+        <div class="col-md-8">
+        <img src="images/notes.png" class="img-responsive">
         </div>
       </div>
     </div> 
@@ -167,7 +172,8 @@ var _hmt = _hmt || [];
               <li class="list-group-item"> - </small></li>
               <li class="list-group-item"><h3 class="panel-title price">0 <span class="price-month">元/月</span> </h3></li>
               <!--li class="list-group-item"><a href="./download.html" class="btn btn-primary btn-lg">马上下载</a></li-->
-              <li class="list-group-item"><a href="http://pan.baidu.com/s/1hqgyAYK" class="btn btn-primary btn-lg">马上下载</a></li>
+              <li  class="list-group-item"><a id="download_free" href="http://pan.baidu.com/s/1hqgyAYK" class="btn btn-primary btn-lg"
+              >马上下载</a></li>
               
             </ul>
           </div>          
@@ -190,8 +196,8 @@ var _hmt = _hmt || [];
               </small></li>
               <li class="list-group-item"><small>未来</small>更多高级功能</li>
               <li class="list-group-item"><h3 class="panel-title price">10 <span class="price-month">元/月</span> </h3></li>
-              <li class="list-group-item"><a href="./download_vip_10.html" class="btn btn-danger btn-lg" 
-              onClick="_gaq.push(['_trackEvent', 'vip', '10']);">马上下载</a></li>
+              <li class="list-group-item"><a id="download_vip_10" href="./download_vip_10.html" class="btn btn-danger btn-lg" 
+              >马上下载</a></li>
             </ul>
           </div>          
         </div>
