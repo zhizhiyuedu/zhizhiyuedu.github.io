@@ -34,23 +34,6 @@
 
 </script>
 
-<script>
-var downloadLink1 = document.getElementById('download_free');
-addListener(downloadLink1, 'click', function() {
-  ga('send', 'event', 'download', 'free', '0');
-});
-
-var downloadLink2 = document.getElementById('download_vip_10');
-addListener(downloadLink2, 'click', function() {
-  ga('send', 'event', 'download', 'vip', '10');
-});
-
-function addListener(element, type, callback) {
- if (element.addEventListener) element.addEventListener(type, callback);
- else if (element.attachEvent) element.attachEvent('on' + type, callback);
-}
-</script>
-
   </head>
 
   <body>
@@ -172,7 +155,9 @@ function addListener(element, type, callback) {
               <li class="list-group-item"> - </small></li>
               <li class="list-group-item"><h3 class="panel-title price">0 <span class="price-month">元/月</span> </h3></li>
               <!--li class="list-group-item"><a href="./download.html" class="btn btn-primary btn-lg">马上下载</a></li-->
-              <li  class="list-group-item"><a id="download_free" href="http://pan.baidu.com/s/1qWzf4Lm" class="btn btn-primary btn-lg"
+              <li  class="list-group-item">
+              <a id="download_free" href="http://pan.baidu.com/s/1qWzf4Lm" class="btn btn-primary btn-lg"
+              onclick="ga('send', 'event', 'download', 'free', '0');"
               >马上下载</a></li>
               
             </ul>
@@ -197,6 +182,7 @@ function addListener(element, type, callback) {
               <li class="list-group-item"><small>未来</small>更多高级功能</li>
               <li class="list-group-item"><h3 class="panel-title price">10 <span class="price-month">元/月</span> </h3></li>
               <li class="list-group-item"><a id="download_vip_10" href="./download_vip_10.html" class="btn btn-danger btn-lg" 
+              onclick="ga('send', 'event', 'download', 'vip', '10');"
               >马上下载</a></li>
             </ul>
           </div>          
