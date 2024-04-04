@@ -2,7 +2,14 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-54475995-1', 'auto');
+  ga('send', 'pageview');
+</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,16 +30,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-54475995-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
   </head>
 
@@ -43,13 +40,14 @@
         <div class="starter-template">
         <div class="row">
         
-           <h1>知之阅读</h1>
-        <h2>已永久性转移到新网址 </h2>
-      <p>
-<a id="download_free" href="http://www.zhizhireader.com/" class="btn btn-danger btn-lg ">www.zhizhireader.com</a>
-               </p>
-              <h2>
-              </h2>
+        <h1>积累、整理、使用知识</h1>
+        <p>基于读书笔记的知识管理软件</p>
+        <p><a id="download_free" href="./download.html" class="btn btn-danger btn-lg "
+              onclick="ga('send', 'event', 'download', 'free', '1.5.0');"
+              >免费下载</a>
+              </p>
+        
+        <img src="images-1.5.0/reading.png" class="img-responsive">    
 
         </div>
   
@@ -57,11 +55,105 @@
         </div>
       </section>
       
+      <section id="zhailu">
+      <div class="container">   
+      <div class="row">
+      
+      <div class="col-md-5 my-padding-left">
+      <h2 class="text-left">左边读书标重点</h2>
+        
+        <p>用鼠标一点一划，即可标注打动你的字句</p>
+        <p>你标注的内容自动汇总到笔记里，不再散落天涯</p>
+        <p>支持<mark>高亮</mark>，<u>下划线</u>，<mark>区域高亮</mark>等标注工具<small>，以后增加更多...</small></p>       
+        
+      </div>
+      <div class="col-md-7">
+      <img src="images-1.5.0/left.png" class="img-responsive">
+      </div>
+      </div>
+      </div>
+      </section>
+      
+      <section id="pizhu">   
+      <div class="container">   
+      <div class="row">
+      <div class="col-md-7">
+        <img src="images-1.5.0/right.png" class="img-responsive">
+        </div>
+        <div class="col-md-5 my-padding-right">
+        <h2 class="text-left">右边顺手写批注</h2>
+        <p> 看书有心得，写在批注里 </p>
+        <p> 所有的批注，都出现在书本的右边，不遮挡书本内容 </p>
+        <p>你所有的批注，都自动汇总到笔记里，不再散落天涯</p>
+        
+        </div>
+        
+        </div>
+      </div>
+      </section>
+       
+       
+       <section id="huizong">
+       <div class="container">   
+            <div class="row">
+      
+        <div class="col-md-4 my-padding-left">
+        <h2 class="text-left">自动汇总成笔记</h2>
+        <p>你标注的重点，你批注的心得，知之阅读按书名自动汇总成笔记，存放在独立的笔记本文件里</p>
+        <p>点击标注，就可以打开标注所在的书本，自动跳到标注所在的页面</p>
+        
+        </div>
+        
+        <div class="col-md-8">
+        <img src="images-1.5.0/notes.png" class="img-responsive">
+        </div>
+      </div>
+    </div> 
+    </section>
+    
+    <section id="yuntongbu">
+       <div class="container">   
+            <div class="row">
+        <div class="col-md-2 col-md-offset-5">
+        <a id="download_free" href="./download.html" class="btn btn-danger btn-lg "
+              onclick="ga('send', 'event', 'download', 'free', '1.5.0');"
+              >免费下载</a>
+        </div>
 
+      </div>
+    </div> 
+    </section>
+    
+    
+    <section id="bijiao">
+       <div class="container">   
+            <div class="row">
+            
+    </div>
+    </div> 
+    </section>
             
 
 <hr>
-
-
+<ul class="nav navbar-nav">
+            <li  class="active"><a href="./index.html">主页</a></li>
+            <li><a href="./help.html">帮助文档</a></li>            
+            <li><a href="./release.html">更新日志</a></li>
+            <li ><a href="./blog/index.html">博客</a></li>
+            <li><a href="./about.html">关于</a></li>
+          </ul>
+          
+                 <div class="container">   
+            <div class="row">
+      
+        <div class="col-md-4 my-padding-left">
+<p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+        
+        </div>
+        
+        <div class="col-md-8">
+        </div>
+      </div>
+    </div> 
   </body>
 </html>
